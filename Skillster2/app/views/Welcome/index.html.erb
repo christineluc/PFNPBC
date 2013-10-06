@@ -1,7 +1,27 @@
-<% @skills.each do |skill| %>
-	<%= skill.name %>
-
-	<br>
-	<%= skill.description %>
-	<br>
-	<% end %>
+<div id="container">
+	<img src="http://placekitten.com/100/100" alt="KITEHHHHHH">
+	<div id="content">
+		<h1> Hi, I'm Christine</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<div id="skills">
+			<h2>My Skills</h2>
+			<ul>
+				<% @skills.each do |skill| %>
+					<li><%= link_to skill.name, skill %></li>
+				<% end %>
+			</ul>
+		</div>
+	</div> <!-- END #content -->
+	<p>
+	<a href="https://facebook.com" alt="I'm not actually going to share my Facebook Page, I'm just learning how to build this page. Sorry guys.">My Facebook Page</a>
+	</p>
+	<p>
+	<a href="http://twitter.com/christineluc" alt="I love twitter. I love it!">My Twitter Page</a>
+	</p>
+</div> <!-- END #container -->
